@@ -1,0 +1,73 @@
+.upload {
+    // background-color: green;
+    margin-bottom: 10rem;
+
+    &__container {
+        background-color: black;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        align-items: start;
+        // justify-content: space-between;
+        justify-content: space-around;
+        padding: 3rem 2rem;
+        border-radius: 0.5rem;
+        &---text {
+            // width: 40%;
+            &--texthead {
+                color: #FFF;
+                font-size: 3.75rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 4.5rem; /* 120% */
+                letter-spacing: -0.15rem;
+            }
+            &--paragraph {
+                color: #FFF;
+                font-size: 1.25rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.9375rem; /* 155% */
+                letter-spacing: -0.025rem;
+                margin-top: 1rem;
+            }
+        }
+        &---shape {
+            // background-color: #ff0000;
+            // width: 60%;
+            text-align: center;
+
+            &--column {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 2rem;
+                &-box {
+                    // width: 22rem;
+                    // height: 25.25rem;
+                    padding: 5rem 3.5rem;
+                    flex-shrink: 0;
+                    border-radius: 1rem;
+                    background: #FFF;
+                    backdrop-filter: blur(52.5px);
+
+                    &-item {
+                        // background-color: purple;
+                        padding: 2rem 2rem;
+                        border-radius: 0.5rem;
+                        border: 3px dashed #000;
+                        text-align: center;
+
+                        &-img {
+                            margin-bottom: 0.5rem;
+                        }
+                    }
+                }
+            }
+            &--button {
+                text-align: center;
+                margin: 2rem 0;
+            }
+        }
+    }
+}
