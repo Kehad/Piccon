@@ -1,0 +1,100 @@
+.header {
+    // background-color: #ff0000;
+    padding: 4rem 0;
+
+    &__container {
+        // width: 80%;
+        margin: 0 auto;
+        // text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // justify-content: center;
+
+        &-text {
+            text-align: center;
+            padding: 0.5rem 0;
+            font-size: 3.75rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 4.5rem; /* 120% */
+            letter-spacing: -0.15rem;
+        }
+        &-paragraph {
+            color: #000;
+            text-align: center;
+            font-size: 1.25rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.9375rem; /* 155% */
+            letter-spacing: -0.025rem;
+        }
+        &-upload {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0.5rem;
+            border: 1px solid #000;
+            // opacity: 0.5;
+            background: linear-gradient(180deg, rgba(238, 238, 238, 0.21) 0%, rgba(241, 241, 241, 0.21) 100%);
+            backdrop-filter: blur(61px);
+            padding: 4rem 14rem;
+            margin-top:2rem;
+
+            &--text {
+                text-align: center;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.9375rem; /* 193.75% */
+                letter-spacing: -0.02rem;
+                margin-bottom: 0.5rem;
+            }
+
+            &--button {
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        // background-color: #ff0000;
+        padding: 4rem 0;
+    
+        &__container {
+            // width: 80%;
+            margin: 0 auto;
+            // text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // justify-content: center;
+    
+            &-text {
+                text-align: center;
+                padding: 0.2rem 0;
+                font-size: 3rem;
+                
+            }
+            &-paragraph {
+                font-size: 1.2rem;           
+            }
+            &-upload {            
+                padding: 3rem 10rem;
+    
+                &--text {
+                    text-align: center;
+                    font-size: 1rem;
+                }
+    
+                &--button {
+                    margin-top: 1rem;
+                    font-size: small;
+                }
+            }
+        }
+    } 
+}   
