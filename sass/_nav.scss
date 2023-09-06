@@ -1,0 +1,152 @@
+.nav {
+
+    &__container {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 0;
+        &-list {
+            ul {
+                list-style: none;    
+                li {
+                    display: inline;
+                    padding: 0 0.5rem;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        padding: 0.8rem 1.6rem;
+                    }
+                    a:hover {
+                        border-bottom: 1px solid black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/////////////////////////////////////////////////
+/// //////////////////////////////////
+/// ////////////////////////////////////
+@media screen and (max-width: 1040px) {
+    .nav {
+
+        &__container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 0;
+            &-list {
+                ul {
+                    list-style: none;    
+                    li {
+                        display: inline;
+                        padding: 0 0.5rem;
+                        a {
+                            text-decoration: none;
+                            color: black;
+                            padding: 0.8rem 1.6rem;
+                            font-size: small;
+                        }
+                        a:hover {
+                            border-bottom: 1px solid black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.nav__container-open {
+    display: none;
+    height: 2rem;
+    cursor: pointer;
+}
+.nav__container-close {
+    display: none;
+}
+.nav__container-close2 {
+    display: none;
+}
+.nav__container-close3-right {
+    display: none;
+    height: 2rem;
+    cursor: pointer;
+    // transition: all 010s;
+}
+@media screen and (max-width: 768px) {
+    .nav {
+        &__container {
+            // width: 80%;
+            // margin: 0 auto;
+            // display: flex;
+            // justify-content: space-between;
+            // align-items: center;
+            // padding: 2rem 0;
+
+            &-list {
+                // position: relative;
+
+                ul {
+                    transform: translateX(-100%);
+                    transition: all 0.5s;
+
+                    // list-style: none;
+                    height: 100vh;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    background-color: #000;
+                    width: 100%;
+                    color: #fff;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 100;
+                    li {
+                        // display: inline;
+                        padding: 0 0.5rem;
+                        margin: 3rem;
+                        a {
+                            // text-decoration: none;
+                            // color: black;
+                            color: #fff;
+                            border: 2px solid #fff;
+                            padding: 0.8rem 1.6rem;
+                            // font-size: small;
+                        }
+                        a:hover {
+                            // border-bottom: 1px solid black;
+                        }
+                    }
+                }
+            }
+            &-open {
+                display: block;
+            }
+            &-close {
+                display: block;
+                z-index: 1000;
+            }
+            &-close3-right {
+                display: none;
+                z-index: 1000;
+                position: fixed;
+                top: 7%;
+                right: 10%;
+
+            }
+            &-close2 {
+                position: fixed;
+                // right: 0;
+                display: block;
+                z-index: 1000;
+            }
+        }
+    }
+}
